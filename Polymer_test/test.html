@@ -1,0 +1,170 @@
+<link rel="import" href="./bower_components/paper-ripple/paper-ripple.html">
+<link rel="import" href="./bower_components/paper-fab/paper-fab.html">
+
+
+<polymer-element name="cocktail-tile" noscript>
+
+  <template>
+    <style>
+
+      #paper_ripple {
+        width: 300px;
+        height: 300px;
+        left: 450px;
+        top: 280px;
+        position: absolute;
+      }
+
+       /* Card, Dialog */
+    .card, .dialog {
+      position: relative;
+      display: inline-block;
+      width: 400px;
+      height: 500px;
+      vertical-align: top;
+      background-color: white;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+      margin: 15px;
+
+    }
+
+    .dialog {
+      box-sizing: border-box;
+      border: solid;
+      border-width: 4px;
+      border-color: #C5CAE9;
+
+
+
+    }
+
+    .dialog > .content {
+      height: 170px;
+      font-size: 0.9em;
+    }
+
+    .dialog > .content > .title {
+      font-size: 2em;
+      font-weight: bold;
+      color: black;
+      font-family: Georgia;
+       text-align: center;
+
+
+    }
+
+    .dialog > .button {
+      width: 90px;
+      float: right;
+    }
+
+        .center {
+      text-align: center;
+    }
+
+    .label {
+      padding: 0 16px;
+    }
+
+    .label-blue {
+      color: #4285f4;
+    }
+
+    .label-red {
+      color: #d23f31;
+    }
+
+     /* Button */
+    .button {
+      display: inline-block;
+      position: relative;
+      width: 120px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 2px;
+      font-size: 0.9em;
+      background-color: #fff;
+      color: #646464;
+    }
+
+    .button > paper-ripple {
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .button.narrow {
+      width: 60px;
+    }
+
+    .button.grey {
+      background-color: #eee;
+    }
+
+    .button.blue {
+      background-color: #4285f4;
+      color: #fff;
+    }
+
+    .button.green {
+      background-color: #0f9d58;
+      color: #fff;
+    }
+
+    .button.raised {
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+
+    .button.raised:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition-delay: 0s;
+    }
+
+    .bild {
+
+
+     text-align: center;
+
+    }
+    .favor {
+      position:absolute;
+      bottom: -20px;
+      right: -20px;
+
+
+    }
+
+    </style>
+
+
+
+
+      <div class="dialog" >
+
+        <div class="content">
+          <div class="title">Cocktailname</div><br>
+          <div class="bild"><image  src="http://klangschreiber.de/files/2012/03/cocktail.jpg"></image></div>
+
+        </div>
+        <paper-ripple fit class="recenteringTouch"></paper-ripple>
+
+        <paper-fab class="favor"  icon="favorite"></paper-fab>
+
+    </div>
+
+
+
+
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+    });
+
+  </script>
+
+</polymer-element>
