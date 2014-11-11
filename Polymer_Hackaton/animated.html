@@ -1,0 +1,57 @@
+<polymer-element name="x-el" noscript>
+<template>
+  <style>
+    #hero {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 300px;
+      background-color: blue;
+    }
+  </style>
+  <div id="hero" hero-id="bar" hero></div>
+</template>
+</polymer-element>
+
+<polymer-element name="x-page-1" noscript>
+<template>
+  <style>
+    #hero1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      background-color: orange;
+    }
+  </style>
+  <div id="hero1" hero-id="foo" hero></div>
+  <div id="hero2" hero-id="bar" hero></div>
+</template>
+</polymer-element>
+
+<polymer-element name="x-page-2" noscript>
+<template>
+  <style>
+    #hero1 {
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      width: 300px;
+      height: 300px;
+      background-color: orange;
+    }
+    #hero2 {
+      background-color: blue;
+      height: 150px;
+      width: 400px;
+    }
+  </style>
+  
+ 
+  <div id="hero1" hero-id="foo" hero></div>
+  
+  <x-el></x-el>
+</template>
+</polymer-element>
